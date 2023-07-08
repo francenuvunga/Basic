@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hg</title>
+  <style>
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .message {
+      display: none;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="btn">Clique aqui</button>
+    <p id="message" class="message"></p>
+  </div>
+
+  <script>
+    var button = document.getElementById("btn");
+    button.addEventListener("click", function() {
+      var aluno = " France";
+
+      var messageElement = document.getElementById("message");
+      messageElement.textContent = "Ola! " + aluno + ", seja bem-vindo ao curso de Mobile e Web da 9a edicao, da Explicador Inc, Lda.";
+      messageElement.style.display = "block";
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
